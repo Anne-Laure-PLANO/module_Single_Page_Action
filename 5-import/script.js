@@ -1,6 +1,6 @@
 //5-1 Import
 
-// importe toutes les fonctions se nommant "hello" et provenant du fichier functions.js.
+// importe la fonction se nommant "hello" et provenant du fichier functions.js.
 import {hello} from './functions.js';
 
 
