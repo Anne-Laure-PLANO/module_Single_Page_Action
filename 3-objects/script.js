@@ -40,7 +40,7 @@ Section 2
 Le fichier data.js comporte un tableau des perturbations du réseau de transport Grenoblois. Pour chacune des perturbations, afficher le champ texte.
 
 */
-// for (let key in data){
-//     console.log("résultat : " + data[key].texte);
-// }   
+ for (let key in data){
+     console.log("résultat : " + data[key].texte);
+ }   
 
