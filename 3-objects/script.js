@@ -21,25 +21,26 @@ Section 1
 Afficher les caractéristiques du véhicule sours la forme clé : valeur (Ex: id: 3221).
 
 */
-for (let key in bus){
-    if (key === "garage"){
-        let answer =""; 
-        for (let key2 in bus[key]){
-            answer += `${key2} : ${bus[key][key2]} `;
+
+function displayObject (objet){
+    for (let key in objet){
+        if (typeof objet[key] === "object" && objet[key] != null){
+            console.log(key + " : ");
+            displayObject(objet[key]);
+        }else{
+            console.log(key + " : " + objet[key])
         }
-        console.log(key + " : " + answer);
-        
-    }else {
-        console.log(key +" : "+ bus[key])
     }
 }
+
+displayObject(bus);
 
 /*
 Section 2
 Le fichier data.js comporte un tableau des perturbations du réseau de transport Grenoblois. Pour chacune des perturbations, afficher le champ texte.
 
 */
-//for (let key in data){
-//    console.log("résultat : " + data[key].texte);
-//}   
-;
+// for (let key in data){
+//     console.log("résultat : " + data[key].texte);
+// }   
+
