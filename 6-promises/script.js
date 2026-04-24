@@ -99,10 +99,8 @@ Vous allez ensuite utiliser fetch pour faire des appels à l'API Star Wars (http
 //   })
 //   .catch((error)=>{
 //     console.Error("Erreur : " + error);
-//   })
-//   .then(()=>{
-//     console.log("\n\n Exercice 2 : \n\n");
 //   });
+//   
 
 
 /*
@@ -111,13 +109,32 @@ Vous allez ensuite utiliser fetch pour faire des appels à l'API Star Wars (http
 
 */
 
-// fetch("https://swapi.info/api/people/1")
-//   .then(function(response) {
+// fetch("https://swapi.info/api/species/1")
+//   .then((response) => {
 //     if (!response.ok) {
 //       throw new Error("Erreur HTTP : " + response.status);
 //     }
 //     return response.json();
 //   })
+//   .then((data) => {
+//     for (key in data) {
+//       console.log(key + " : " + data[key]);
+//       return data;
+//     }
+//   })
+//   .then((data) =>{
+//     console.log(data.people[0]);
+//     return data.people[0];
+//   })
+//   .then((data) =>{
+//     return fetch(data)
+//   })
+//   .then((response) => {
+//     if (!response.ok) {
+//       throw new Error("Erreur HTTP : " + response.status);
+//     }
+//     return response.json();
+//   })  
 //   .then(function(data) {
 //     for (key in data){
 //       console.log(key + " : " + data[key])
