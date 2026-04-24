@@ -1,0 +1,14 @@
+{
+  "villes": [
+    {"nom": "Tokyo", "pays": "Japon", "population": "37"},
+    {"nom": "Delhi", "pays": "Inde", "population": "30"},
+    {"nom": "Shanghai", "pays": "Chine", "population": "27"},
+    {"nom": "São Paulo", "pays": "Brésil", "population": "22"},
+    {"nom": "Ciudad de Mexico", "pays": "Mexique", "population": "22"},
+    {"nom": "Dhaka", "pays": "Bangladesh", "population": "21"},
+    {"nom": "Le Caire", "pays": "Égypte", "population": "21"},
+    {"nom": "Pékin", "pays": "Chine", "population": "20"},
+    {"nom": "Bombay", "pays": "Inde", "population": "20"},
+    {"nom": "Osaka", "pays": "Japon", "population": "19"}
+  ]
+}
